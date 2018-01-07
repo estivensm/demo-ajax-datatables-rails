@@ -1,12 +1,13 @@
-%table.table.table-responsive#users-table{ "data-source": root_path(format: :json) }
-  %thead
-    %tr
-      %th Name
-      %th.text-center Age
-      %th Email
-      %th Company
-      %th Job
-  %tbody
+.table-responsive
+  %table.table#users-table{ "data-source": root_path(format: :json) }
+    %thead
+      %tr
+        %th Name
+        %th.text-center Age
+        %th Email
+        %th Company
+        %th Job
+    %tbody
 :javascript
   jQuery(document).ready(function() {
     $('#users-table').dataTable({
